@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  background-color: #111111;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.App-header {
+  display: flex;
+  font-size: 6rem;
+  color: white;
+}
+
+.upload-container {
+  color: white;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-preview {
+  margin-top: 20px;
+}
+
+.image-preview img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.prediction-result {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #61dafb;
+}
