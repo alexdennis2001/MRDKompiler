@@ -21,8 +21,11 @@ html, body, #root {
 
 .App-header {
   display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 6rem;
   color: white;
+  margin-top: -20rem;
 }
 
 .upload-container {
@@ -46,4 +49,34 @@ html, body, #root {
   margin-top: 20px;
   font-size: 1.5rem;
   color: #61dafb;
+}
+
+.akinator { 
+  width: 20rem;
+  height: 20rem;
+}
+
+.insert {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 50;
+}
+
+.previewFoto {
+  /* background-color: b; */
+}
+
+.send {
+  background-color: black;
+  border-radius: 10px;
+  border-color: cyan;
+  color: cyan;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.send:hover {
+  background-color: cyan;
+  color: black;
 }

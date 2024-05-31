@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import logo from './fruit-akinator.png' 
 
 function App() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -38,15 +39,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Fruit Aquinator
-        </p>
+        <p> MRDK Fruit Akinator</p>
+        <img src={logo} className="akinator"></img>
       </header>
       <div className="upload-container">
-        <p>Insert the image of the fruit you wish is predicted:</p>
+        <p className="insert">Insert the image of your fruit:</p>
         <form onSubmit={handleSubmit}>
-          <input type="file" onChange={handleImageChange} />
-          <button type="submit">Send</button>
+          <input type="file" onChange={handleImageChange} className="previewFoto"/>
+          <button type="submit" className="send">Send</button>
         </form>
         {imagePreviewUrl && (
           <div className="image-preview">
